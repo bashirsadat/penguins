@@ -5,7 +5,7 @@ from PIL import Image
 import pickle
 import altair as alt
 from sklearn.ensemble import RandomForestClassifier
-image = Image.open('logo.jpg')
+image = Image.open('logo.png')
 cola, colb, colc = st.columns([3,6,1])
 with cola:
     st.write("")
