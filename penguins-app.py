@@ -15,25 +15,26 @@ with colb:
 
 with colc:
     st.write("")
-st.write("""
-# Penguin Prediction App
-
-This app predicts the **Palmer Penguin** species!
-
-Data obtained from the [palmerpenguins library](https://github.com/allisonhorst/palmerpenguins) in R by Allison Horst.
-""")
-cola, colb, colc = st.columns([1,6,1])
-irisi = Image.open('all.png')
-with cola:
-    st.write("")
-with colb:
-    st.image(irisi, width = 600)
-with colc:
-    st.write("")
-
 menu = ["Home","About"]
 choice = st.sidebar.selectbox("Menu",menu)
 if choice == "Home":
+    st.write("""
+    # Penguin Prediction App
+
+    This app predicts the **Palmer Penguin** species!
+
+    Data obtained from the [palmerpenguins library](https://github.com/allisonhorst/palmerpenguins) in R by Allison Horst.
+    """)
+    cola, colb, colc = st.columns([1,6,1])
+    irisi = Image.open('all.png')
+    with cola:
+        st.write("")
+    with colb:
+        st.image(irisi, width = 600)
+    with colc:
+        st.write("")
+
+
     st.sidebar.header('User Input Parameters')
 
 
